@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3实现平滑过渡</title>
+	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+<body>
+	<div class="container">
+		<div class="st-container">
+		     <!-- 导航开始 -->
+			<input type="radio" name="radio-set" checked="checked" id="st-control-1">
+			<a href="#st-panel-1">京东导航</a>
+			<input type="radio" name="radio-set" id="st-control-2">
+			<a href="#st-panel-2">个人博客</a>
+			<input type="radio" name="radio-set" id="st-control-3">
+			<a href="#st-panel-3">门户网站</a>
+			<input type="radio" name="radio-set" id="st-control-4">
+			<a href="#st-panel-4">浏览器</a>
+			<input type="radio" name="radio-set" id="st-control-5">
+			<a href="#st-panel-5">电商网站</a>
+			<!-- 导航结束 -->
+			<!-- 内容 -->
+			<div class="st-scroll">
+				<section class="st-panel" id="st-panel-1">
+					<div class="st-desc" data-icon="H"></div>
+					<h2><a href="pic/index.html">图片库</a></h2>
+
+					<p>天地有大美而无情。你看山川河流，蓝天云朵，都是庄严温柔，没有悲伤。by 田艺苗</p>
+				</section>
+				<section class="st-panel st-color" id="st-panel-2">
+					<div class="st-desc" data-icon="2"></div>
+					<h2 ><a href="blog/index.html">Blog</a></h2>
+					<p>扁平化个人博客</p>
+				</section>
+				<section class="st-panel" id="st-panel-3">
+					<div class="st-desc" data-icon="B"></div>
+					<h2><a href="firm/index.html">门户网站</a></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sapiente veniam, ipsa nemo laboriosam perspiciatis, molestias itaque quod. Corporis nobis ipsa quisquam veniam similique voluptas iusto voluptatum quis explicabo ullam!</p>
+				</section>
+				<section class="st-panel st-color" id="st-panel-4">
+					<div class="st-desc" data-icon="C"></div>
+					<h2><a href="bootstrap/index.html">浏览器介绍</a></h2>
+					<p>Bootstrap框架搭建：响应式导航条，广告轮播插件，缩略图三列布局，标签页，模态弹出框</p>
+				</section>
+				<section class="st-panel" id="st-panel-5">
+					<div class="st-desc" data-icon="5"></div>
+					<h2><a href="shop/index.html">电商网站</a></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sapiente veniam, ipsa nemo laboriosam perspiciatis, molestias itaque quod. Corporis nobis ipsa quisquam veniam similique voluptas iusto voluptatum quis explicabo ullam!</p>
+				</section>
+			</div>
+			<!-- 内容结束 -->
+		</div>
+	</div>
+</body>
+</html>

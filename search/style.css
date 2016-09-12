@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	
+	background:url(river.jpg);
+    background-size: cover;
+}
+ul{
+	list-style: none;
+}
+.bg-div{
+	position: absolute;
+    top: 300px;
+    left:500px;
+}
+.logo{
+	background-image: url(logo.png);
+	width: 107px;
+	height: 53px;
+	float:left;
+	margin:-8px 18px 0 0;
+}
+
+form{ 
+    
+   padding: 5px;
+   display: inline-block;
+   background-color: #fff;
+	
+}
+.search-input,.search-input-button{
+	border:0;
+	float: left;
+}
+
+.search-input{
+	width: 350px;
+	height:25px;
+	line-height: 25px;
+	outline: none;
+	font-size: 20px;
+	font-family: "微软雅黑";
+
+}
+.search-input-button{
+	background-image: url(search-button.png);
+	width: 29px;
+	height: 29px;
+}
+
+#search-suggest{
+	/*position: absolute;
+	top:339px;
+	left:624px;*/
+	background-color: #fff;
+	width: 388px;
+	border:1px solid #999;
+	display: none;
+}
+#search-suggest ul li{
+	padding: 3px;
+	font-size:14px;
+	line-height: 25px;
+	cursor: pointer;
+}
+#search-suggest ul li:hover{
+	background: #e5e5e5;
+	text-decoration: underline;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>search</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+    <div class="bg-div">
+		<div class="logo"></div>
+		<form id="search-form" action="https://cn.bing.com/search" target="_blank">
+			<input type="text" name="" class="search-input" id="search-input">
+			<input type="submit" name="" class="search-input-button" value="">
+		</form>
+
+	</div>
+	<div class="suggest" id="search-suggest">
+		<ul id="search-result">
+			<li>搜索结果</li>	
+			<li>搜索结果</li>	
+			<li>搜索结果</li>	
+	    </ul>
+	</div>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+	<script type="text/javascript">
+// 	 $('#search-input').bind('keyup',function(){
+// 	var jqueryInput = $(this);
+// 	var searchText = jqueryInput.val();
+// 	$.get('http://api.bing.com/qsonhs.aspx?q='+searchText,function(d){
+// 		var d= d.AS.Results[0].Suggests;
+// 		var html='';
+// 		for (var i = 0; i < d.length; i++) {
+// 			html+='<li>'+d[i].Txt+'</li>';
+// 		}
+// 		$('#search-result').html(html);
+// 		$('#search-suggest').css({
+// 	top:$('#search-form').offset().top+$('#search-form').height()+10,
+// 	left:$('#search-form').offset().left
+// }).show();
+
+// 	},'json');
+//  });
+// 	 $(document).bind('click',function(){
+// 	 	$('#search-suggest').hide();
+// 	 });
+//      $(document).delegate('li', 'click', function(){
+//      	var keyword = $(this).text();
+//      	location.href='https://cn.bing.com/search?q='+keyword;
+//      });
+	   
+ //使用原声js
+ //可以为一个dom元素绑定多个事件
+ var getDom =function(id){
+ 	return document.getElementById(id);
+ }
+
+//给元素绑定事件的函数
+//元素id 绑定事件  回调函数
+ var addEvent = function(id,event,fn){
+ 	var el = getDom(id)||document;
+ 	if (el.addEventListener) {
+ 		el.addEventListener(event,fn,false);
+ 	}
+ 	else if(el.attachEvent){
+ 		el.attachEvent('on'+event,fn);
+ 	}
+ }
+ //取元素距离浏览器左部的值
+ var getElementLeft = function(element){
+ 	var actualLeft = element.offsetLeft;
+ 	//offsetLeft距离父元素左边的距离
+ 	var current = element.offsetParent;
+ 	while (current !== null){
+ 		actualLeft += current.offsetLeft;
+ 		current = current.offsetParent;
+ 	}
+ 	return actualLeft;
+ }
+
+ //取元素距离浏览器顶部的值
+ var getElementTop = function(element){
+ 	var actualTop = element.offsetTop;
+ 	var current = element.offsetParent;
+ 	while (current !== null){
+ 		actualTop += current.offsetTop;
+ 		current = current.offsetParent;
+ 	}
+ 	return actualTop;
+ }
+//输入框响应键盘输入事件
+addEvent('search-input','keyup',function(){
+	getDom('search-suggest').style.top = getElementTop(getDom('search-form'))+38+'px';
+	getDom('search-suggest').style.left = getElementLeft(getDom('search-form'))+'px';
+    getDom('search-suggest').style.position='absolute';
+    getDom('search-suggest').style.display='block';
+    
+});
+
+ 
+	</script>
+	</body>
+</html>

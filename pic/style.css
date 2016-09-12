@@ -1,0 +1,47 @@
+*{
+	margin:0;padding: 0;
+ }
+body{
+	font-family: "华文细黑", "黑体", serif; 
+	color:#666;
+	background-color: #ccc;
+}
+#mainbody{
+	width: 700px;
+	margin:20px auto;
+}
+h1{ 
+	background-color: transparent;/*背景设置透明*/
+	margin-bottom: 20px;
+}
+li{
+	list-style: none;
+}
+a{
+	display:block;
+	float: left;
+	border:1px solid #f9532d;
+	padding: 4px 52px;
+	text-decoration: none;
+	color: #f9532d;
+    margin-bottom: 2px;
+    margin-left: 5px;
+
+
+}
+
+.on,a:hover{
+    background-color:#f9532d;
+    color: #fff; 
+    transition: all 1s;
+
+}
+a:active{
+	background-color: #fff;
+}
+img{
+	display: block;
+	clear: both;
+
+	margin-bottom: 10px;
+}
