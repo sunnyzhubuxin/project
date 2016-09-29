@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body{
-	font-family: "Î¢ÈíÑÅºÚ";
+	font-family: "Microsoft YaHei";
 	font-size: 14px;
 	
 }
@@ -137,6 +137,7 @@ button{
 	margin:0 auto;
 }
 h2{
+
 	font-size: 30px;
 }
 /*ÏßÌõ*/
@@ -151,7 +152,9 @@ h2{
 	background:#078494;
 	width: 60%;
 }
-
+.green-section h2 a{
+	color: #0D6F7C;
+}
 .green-section .icon-group .icon{
 	display: inline-block;
 	width: 100px;
@@ -193,18 +196,20 @@ h2{
 }
 .text-section h2{
 	margin-bottom: 20px;
+	color: red;
 }
 .text-section p{
 	font-size: 18px;
 	letter-spacing: 1px;
 }
 .text-section .sub-heading{
-	font-size: 20px;
+	color: rgba(255,255,255,0.8);
+	font-size: 18px;
 	margin-top: 0;
 	
 }
 .text-section a{
-    color: #fff;
+    color: rgb(245,245,245);
 
 }
 .text-section a:hover{
@@ -223,7 +228,7 @@ h2{
 	font-family: "Î¢ÈíÑÅºÚ";
 }
 .text-section .yuedu a:hover{
-	background:rgb(253,138,97);
+	opacity: 0.8;
 
 	text-decoration: underline;
 	
@@ -387,6 +392,9 @@ h3{
 }
 .article .content{
 	background: #fefefe;
+}
+.content_wrapper article p{
+	text-indent: 25px;
 }
 article{
 	padding-bottom:20px;
